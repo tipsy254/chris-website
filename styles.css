@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #304616;
     color: #fff;
     padding: 20px;
 }
@@ -123,13 +123,13 @@ footer {
     padding: 8px 16px;
     margin: 5px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    background-color: #c58c8c;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .filter-btn:hover {
-    background-color: #ddd;
+    background-color: #eca4a4;
 }
 
 /* Hide portfolio items by default */
@@ -168,6 +168,79 @@ footer {
 .social-links img:hover {
     transform: scale(1.1);
 }
+.cta {
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+/* Your existing CSS styles */
+
+/* New styles for testimonials section */
+#testimonials {
+    text-align: center;
+}
+.testimonial-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+.testimonial {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    margin-right: 20px;
+    scroll-snap-align: start;
+}
+  
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #666;
+}
+
+.client-name {
+    font-weight: bold;
+}
+/* New styles for buttons */
+#prevBtn,
+#nextBtn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: rgb(90, 85, 85);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #0056b3;
+}
+
 
 
 

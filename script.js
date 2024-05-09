@@ -71,3 +71,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const testimonials = document.querySelector(".testimonial-container");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let scrollAmount = 0;
+
+    nextBtn.addEventListener("click", function() {
+        scrollAmount += 300; // Adjust according to testimonial width
+        testimonials.scrollTo({
+            top: 0,
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+    });
+
+    prevBtn.addEventListener("click", function() {
+        scrollAmount -= 300; // Adjust according to testimonial width
+        testimonials.scrollTo({
+            top: 0,
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+    });
+});
